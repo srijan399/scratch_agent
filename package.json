@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "groq-sdk": "^0.16.0",
     "openai": "^4.87.3",
     "readline-sync": "^1.4.10"

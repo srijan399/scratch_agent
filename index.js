@@ -1,11 +1,13 @@
 import Groq from "groq-sdk";
 import readlineSync from "readline-sync";
+import dotenv from "dotenv";
 
-const GROQ_API_KEY = "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"
+dotenv.config();
 
 const groq = new Groq({
-    apiKey: GROQ_API_KEY,
+    apiKey: process.env.GROQ_API_KEY,
 })
+
 // Tools 
 function getWeatherDetails(city = "") {
     if (city.toLowerCase() === "patiala") return "10 °C";
